@@ -5,10 +5,9 @@ import { compose } from "redux";
 
 
 //import reduxLogger from "./middlware/reduxLogger";
-//import ApiService from "./api/ApiService/ApiService";
+import ApiService from "./api/ApiService/ApiService";
 
-const activeMiddlewareList = [reduxThunk];
-
+const activeMiddlewareList = [reduxThunk.withExtraArgument(ApiService)];
 
 
 const devtools = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
@@ -23,8 +22,7 @@ const composeEnhancers =
 
 
 const preloadedState = {
-    ...JSON.parse(decodeURIComponent(localStorage.getItem("cart"))),
-    ...JSON.parse(decodeURIComponent(localStorage.getItem("auth"))),
+    ...JSON.parse(decodeURIComponent(localStorage.getItem("auth")))
 };
 
 const enhancedStore = composeEnhancers(applyMiddleware(...activeMiddlewareList));
@@ -32,7 +30,7 @@ const store = Object.keys(preloadedState).length
     ? createStore(reducer, preloadedState, enhancedStore)
     : createStore(reducer, enhancedStore);
 
-const store2= createStore(reducer, enhancedStore);
+
 
 // store.subscribe(() => {
 //     if (store.getState().cart.products.length) {

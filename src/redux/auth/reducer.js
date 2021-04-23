@@ -1,7 +1,10 @@
 
+
+
+
 const initialState = {
-    isAuth: false,
-    userName: null
+    isAuth: !!localStorage.getItem("token"),
+    userName: localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token")).userName : null
 };
 
 
@@ -10,14 +13,17 @@ export default function (state = initialState, action) {
         case "login": {
             return {
                 ...state,
-                isAuth: true
+                isAuth: true,
+                userName: action.payload.name
             }
         }
 
         case "logout": {
+            localStorage.removeItem("token");
             return {
                 ...state,
-                isAuth: false
+                isAuth: false,
+                userName: null
             }
         }
 

@@ -75,7 +75,15 @@ code {
 
 
 
+.profile-info {
 
+
+}
+
+
+.profile-buttons > button {
+  margin: 10px;
+}
 
 
 

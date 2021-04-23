@@ -25,6 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://auth.test/src/rest/php/index.php",
   "browserslist": {
     "production": [
       ">0.2%",
