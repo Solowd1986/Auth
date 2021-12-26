@@ -1,0 +1,27 @@
+
+
+.choose {
+  margin: 10px auto;
+}
+
+.choose > span {
+  border-bottom: 1px solid black;
+}
+
+.choose > span:not(:last-child) {
+  padding-right: 7px;
+
+  border-right: 1px solid black;
+}
+
+.choose > span:last-child {
+  padding-left: 7px;
+}
+
+.active {
+  background-color: darkgrey;
+}
+
+.hide {
+  display: none
+}

@@ -5,7 +5,6 @@ class ApiService {
         this._axios = axios;
         this._retryCount = 0;
         this._lastRequestURI = null;
-        this._decodeRecord = recordName => JSON.parse(decodeURIComponent(localStorage.getItem(recordName)));
 
         this.api = this._axios.create({
             baseURL: "/api/",
@@ -17,10 +16,10 @@ class ApiService {
         });
 
         this.api.interceptors.response.use(this._handleSuccessResponse, this._handleFailResponse);
-        this.api.interceptors.request.use(this._handleSuccessRequest);
+        this.api.interceptors.request.use(this._handleRequest);
     }
 
-    _handleSuccessRequest = (request) => {
+    _handleRequest = (request) => {
         this._lastRequestURI = request.url;
         return request;
     };
@@ -34,12 +33,24 @@ class ApiService {
         return Promise.reject(error);
     };
 
+    _decodeRecord = recordName => JSON.parse(decodeURIComponent(localStorage.getItem(recordName)));
+
     _handleSuccessResponse = response => response;
 
     get = (uri) => this.api.get(uri);
 
-    getToken = async () => {
-        return await this.api.get("token");
+
+    userAuth = async (uri, params) => {
+        return await this.api.post(uri, params);
+    };
+
+    getToken = async (uri, params) => {
+        return await this.api.post(uri, params, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            }
+        });
     };
 }
+
 export default new ApiService();

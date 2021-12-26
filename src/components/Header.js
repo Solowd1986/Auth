@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
             <Row>
                 <Col>
-                    <header className={"d-flex justify-content-center mt-5 mb-5"}>
+                    <header className={"d-flex justify-content-center mt-5 mb-1"}>
                         <NavLink to="/"
                                  className={"mr-2 p-2 rounded text-white bg-primary"}
                                  activeClassName={"bg-danger"}
@@ -37,6 +37,12 @@ const Header = (props) => {
                                  activeClassName={"bg-danger"}
                                  exact>
                             Профиль
+                        </NavLink>
+                        <NavLink to="/private"
+                                 className={"mr-2 p-2 rounded text-white bg-primary"}
+                                 activeClassName={"bg-danger"}
+                                 exact>
+                            Закрытая страница
                         </NavLink>
                     </header>
                 </Col>

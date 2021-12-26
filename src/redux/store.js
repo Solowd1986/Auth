@@ -1,6 +1,6 @@
-import { applyMiddleware, createStore } from "redux";
+import { applyMiddleware, createStore, combineReducers } from "redux";
 import reduxThunk from "redux-thunk";
-import reducer from "./auth/reducer";
+import auth from "./auth/reducer";
 import { compose } from "redux";
 
 
@@ -20,15 +20,25 @@ const composeEnhancers =
 
 
 
+function counter (state = { title: "counter" }, action) {
+    return state;
+}
+
+const rootReducer = combineReducers({
+    auth,
+    counter
+});
+
 
 const preloadedState = {
     ...JSON.parse(decodeURIComponent(localStorage.getItem("auth")))
 };
 
+
 const enhancedStore = composeEnhancers(applyMiddleware(...activeMiddlewareList));
 const store = Object.keys(preloadedState).length
-    ? createStore(reducer, preloadedState, enhancedStore)
-    : createStore(reducer, enhancedStore);
+    ? createStore(rootReducer, preloadedState, enhancedStore)
+    : createStore(rootReducer, enhancedStore);
 
 
 

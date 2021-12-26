@@ -1,10 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import {Container, Row, Col, Button} from "react-bootstrap";
-import Header from "./Header";
+import { Row, Col } from "react-bootstrap";
 
 const Movies = (props) => {
-    //console.log(props);
+    console.log(props);
     return (
         <>
             <Row>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Route, Redirect } from "react-router";
 import { connect } from "react-redux";
@@ -21,12 +22,14 @@ import { connect } from "react-redux";
  *
  */
 
-const PrivateRoute = ({ isAuth,  ...props}) => {
+const PublicRoute = ({ isAuth, component: Component, ...props}) => {
     return isAuth ? <Route {...props}/> : <Redirect to="/404"/>;
 };
 
 const mapStateToProps = (state) => ( {isAuth: state.auth.isAuth });
-export default connect(mapStateToProps)(PrivateRoute);
+export default connect(mapStateToProps)(PublicRoute);
+
+
 
 
 
