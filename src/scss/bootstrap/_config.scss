@@ -1,0 +1,70 @@
+/*
+Bootstrap can be used very modular.
+I don't import the complete Bootstrap CSS.
+Instead I use import in the _config.scss to only get the components I want to use.
+In the end my CSS files only contains what I really need and use.
+*/
+
+@import "./pre-default";
+
+
+// *** Core with grid
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+
+// *** Standards
+// @import "tables";
+// @import "forms";
+@import "~bootstrap/scss/buttons";
+
+// *** Components
+// @import "transitions";
+// @import "dropdown";
+// @import "button-group";
+// @import "input-group";
+// @import "custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+// @import "card";
+// @import "breadcrumb";
+// @import "pagination";
+// @import "badge";
+// @import "jumbotron";
+ @import "~bootstrap/scss/alert";
+// @import "progress";
+// @import "media";
+// @import "list-group";
+// @import "close";
+
+// *** Components w/ JavaScript
+// @import "modal";
+// @import "tooltip";
+// @import "popover";
+// @import "carousel";
+
+// *** Utility classes
+@import "~bootstrap/scss/utilities/align";
+@import "~bootstrap/scss/utilities/background";
+@import "~bootstrap/scss/utilities/borders";
+// @import "utilities/clearfix";
+@import "~bootstrap/scss/utilities/display";
+// @import "utilities/embed";
+@import "~bootstrap/scss/utilities/flex";
+// @import "utilities/float";
+//@import "utilities/position";
+//@import "utilities/screenreaders";
+@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/text";
+//@import "utilities/visibility";
+
+
+@import "./bootstrap_ext/buttons";
+
+

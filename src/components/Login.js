@@ -49,7 +49,7 @@ class Login extends PureComponent {
     };
 
     render() {
-        console.log(this.props);
+        //console.log(this.props);
 
 
         const handlerClick = (evt) => {

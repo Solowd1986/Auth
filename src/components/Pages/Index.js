@@ -1,22 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {Container, Row, Col, Button} from "react-bootstrap";
-import Header from "./Header";
+import Header from "../Header";
+import Login from "../Login";
+import { connect } from "react-redux";
 
-const Profile = (props) => {
+const Index = (props) => {
     //console.log(props);
     return (
         <>
             <Row>
                 <Col>
-                    <h1 style={{ textAlign: "center"}}>PROFILE</h1>
+                    <h1 style={{textAlign: "center"}}>INDEX</h1>
                 </Col>
             </Row>
         </>
     );
 };
 
-export default Profile;
+export default Index;
 
 
 

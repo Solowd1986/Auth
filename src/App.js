@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import './App.css';
-import "./scss/base.scss";
+import "./scss/bootstrap/_config.scss";
 
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import PrivateRoute from "./components/PrivateRoute";
-import Profile from "./components/Profile";
-import Index from "./components/Index";
+import Profile from "./components/Pages/Profile";
+import Index from "./components/Pages/Index";
 import _Layout from "./components/_Layout";
 
-import PageNotFound from "./components/PageNotFound";
-import Anime from "./components/Anime";
-import Series from "./components/Serires";
-import Movies from "./components/Movies";
-import PrivatePage from "./components/PrivatePage";
+import PageNotFound from "./components/404/PageNotFound";
+import Anime from "./components/Pages/Anime";
+import Series from "./components/Pages/Serires";
+import Movies from "./components/Pages/Movies";
+import PrivatePage from "./components/Pages/PrivatePage";
 
 
 import store from "./redux/store";

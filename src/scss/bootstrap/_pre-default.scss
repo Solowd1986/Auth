@@ -1,0 +1,17 @@
+
+
+/*
+Bootstrap uses !default on each variable, which makes customizing very easy.
+It's the opposite of the notorious !important: While !important is like "Oh, there's a rule for this? I don't care,
+use this!", a variable with !default will only get defined by SASS if it isn't already set.
+
+Take the variable $enable-rounded: true !default; as example: It's set in Bootstrap and rounds
+all the corners. And if I don't want rounded corners?
+
+Simple: I write $enable-rounded: false; in the pre_default file.
+So when SASS is compiling the Bootstrap variables, $enable-rounded is
+already set and won't be touched. I didn't have to overwrite anything!
+Neat, huh?
+*/
+
+$enable-rounded: true;

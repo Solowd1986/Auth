@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 const Movies = (props) => {
-    console.log(props);
+    //console.log(props);
     return (
         <>
             <Row>
