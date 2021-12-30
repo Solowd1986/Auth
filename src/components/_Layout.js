@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Container } from "react-bootstrap";
 import Header from "./Header";
 import Login from "./Login";
-import FormLogin from "./Pages/LoginForm";
+import FormLogin from "./Pages/Login/FormLogin";
 
 
 // header - это блок с навигацией, в нем лежат NavLink с названиями страниц, типа index/profile
@@ -15,6 +15,7 @@ class _Layout extends React.Component {
             <Container>
                 <Header/>
                 <FormLogin/>
+
                 <button className={"btn bg-danger"}>Clear</button>
                 <div className="alert bt alert-primary" role="alert">
                     This is a primary alert with <a href="#" className="alert-link">an example link</a>. Give it a click if you like.

@@ -27,6 +27,7 @@
   margin:0 15px 10px 0;
   display:inline-block;
   border-bottom:2px solid transparent;
+  cursor: pointer;
 }
 
 
@@ -82,6 +83,17 @@
   background:rgba(255,255,255,.1);
 }
 
+.input {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 15px -1px #000000;
+  box-shadow: 5px 5px 15px -1px #000000;
+  //transition: box-shadow 0.2s ease-in;
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+
 .group input[data-type="password"]{
   text-security:circle;
   -webkit-text-security:circle;
@@ -92,12 +104,22 @@
   font-size:12px;
 }
 
-.form .group .button{
+.button{
   background:#1161ee;
 }
 
-.icon-wrap {
+.button {
+  $bg: #1161ee;
+  transition: background-color .2s ease-in;
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
 
+
+.icon-wrap {
+  transition:color .2s ease-in-out;
+  cursor: pointer;
 }
 
 .form .group label .icon{
@@ -118,7 +140,7 @@
   height:2px;
   background:#fff;
   position:absolute;
-  transition:all .2s ease-in-out 0s;
+  transition:transform .2s ease-in-out;
 }
 
 .form .group label .icon:before{
@@ -134,12 +156,13 @@
   transform:scale(0) rotate(0);
 }
 
+
 .check:checked + label{
   color:#fff;
 }
 
 .check:checked + label .icon{
-  background:#1161ee;
+  background-color:#1161ee;
 }
 
 
@@ -163,6 +186,7 @@
   margin:20px 0 15px 0;
   background:rgba(255,255,255,.2);
 }
+
 .foot-lnk{
   text-align:center;
 }

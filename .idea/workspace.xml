@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58447fc-538f-4c60-8b21-8628f8028f27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Pages/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pages/form-login.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/bootstrap/_config.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/bootstrap/_pre-default.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Anime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Anime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageNotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/404/PageNotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrivatePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/PrivatePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Serires.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Serires.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/FormLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/form-login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/form-login.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/_Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pre_defaults.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/bootstrap/bootstrap_ext/_buttons.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Pages/Login" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -121,7 +105,7 @@
       <workItem from="1640438501989" duration="6481000" />
       <workItem from="1640519742924" duration="257000" />
       <workItem from="1640780453945" duration="6442000" />
-      <workItem from="1640885445375" duration="4723000" />
+      <workItem from="1640885445375" duration="9083000" />
     </task>
     <task id="LOCAL-00001" summary="log">
       <created>1619186404367</created>
@@ -144,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640519805630</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="log">
+      <created>1640890901884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640890901884</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
