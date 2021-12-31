@@ -5,6 +5,26 @@ import Header from "./Header";
 import Login from "./Login";
 import FormLogin from "./Pages/Login/FormLogin";
 
+import styles from "../scss/auth-form/auth-form.module.scss";
+
+
+const Lay = () => {
+    return (
+        <div className={styles.over}>
+            <div className={styles.wrap}>
+                <div className={styles.item}>item1</div>
+                <div className={styles.item}>item2</div>
+                <div className={styles.item}>item3</div>
+                <div className={styles.item}>item4</div>
+                <div className={styles.item}>item5</div>
+                <div className={styles.item}>item6</div>
+                <div className={styles.item}>item7</div>
+            </div>
+        </div>
+
+    )
+};
+
 
 // header - это блок с навигацией, в нем лежат NavLink с названиями страниц, типа index/profile
 // Login - это форма регистрации или вывод профиля, если вход был выполнен
@@ -14,7 +34,8 @@ class _Layout extends React.Component {
         return (
             <Container>
                 <Header/>
-                <FormLogin/>
+                <Lay/>
+                {/*<FormLogin/>*/}
 
                 <button className={"btn bg-danger"}>Clear</button>
                 <div className="alert bt alert-primary" role="alert">

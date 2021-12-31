@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e58447fc-538f-4c60-8b21-8628f8028f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/FormLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/form-login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/form-login.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Login/form-login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Login/form-login.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/_Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/auth-form/auth-form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/auth-form/auth-form.module.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OpenServerSecond\domains\auth.test\src\components\Pages\Login" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,7 +110,11 @@
       <workItem from="1640438501989" duration="6481000" />
       <workItem from="1640519742924" duration="257000" />
       <workItem from="1640780453945" duration="6442000" />
-      <workItem from="1640885445375" duration="9083000" />
+      <workItem from="1640885445375" duration="9108000" />
+      <workItem from="1640908175053" duration="364000" />
+      <workItem from="1640950119907" duration="1273000" />
+      <workItem from="1640951598207" duration="119000" />
+      <workItem from="1640951770311" duration="5476000" />
     </task>
     <task id="LOCAL-00001" summary="log">
       <created>1619186404367</created>
@@ -135,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640890901884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor">
+      <created>1640907199542</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640907199542</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +171,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="log" />
-    <option name="LAST_COMMIT_MESSAGE" value="log" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>
